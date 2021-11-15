@@ -51,7 +51,9 @@ class BeerControllerTest
 
     private BeerDto generateBeerDto()
     {
-        return BeerDto.builder().build();
+        BeerDto dto = BeerDto.builder().build();
+        dto.setId(null);
+        return dto;
     }
 
     private String beerDtoToJSON(BeerDto beerDto) throws JsonProcessingException
