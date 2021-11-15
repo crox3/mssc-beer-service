@@ -9,5 +9,4 @@ import crox.microservices.msscbeerservices.domain.Beer;
 
 public interface BeerRepository extends PagingAndSortingRepository<Beer, UUID>
 {
-
 }
