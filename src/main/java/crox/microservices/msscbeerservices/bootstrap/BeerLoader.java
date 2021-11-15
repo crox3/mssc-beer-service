@@ -28,7 +28,6 @@ public class BeerLoader implements CommandLineRunner
     private void loadBeerObject() {
         if(beerRepository.count() == 0) {
             beerRepository.save(Beer.builder()
-                    .id(UUID.randomUUID())
                     .beerName("Mango Bob")
                     .beerStyle("IPA")
                     .quantityToBrew(200)
@@ -38,7 +37,6 @@ public class BeerLoader implements CommandLineRunner
                     .build());
 
             beerRepository.save(Beer.builder()
-                    .id(UUID.randomUUID())
                     .beerName("Galaxy Cat")
                     .beerStyle("Pale Ale")
                     .quantityToBrew(200)
